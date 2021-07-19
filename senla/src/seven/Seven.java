@@ -11,11 +11,11 @@ public class Seven {
     }
 
     private void addItems() {
-        items.add(new Item("Лампа", 4, 300));
-        items.add(new Item("Кружка", 5, 100));
-        items.add(new Item("Бутылка", 2, 200));
-        items.add(new Item("Шкатулка", 3, 400));
-        items.add(new Item("Золото", 2, 500));
+        items.add(new Item("Р›Р°РјРїР°", 4, 300));
+        items.add(new Item("Р“Р»РѕР±СѓСЃ", 5, 100));
+        items.add(new Item("РњР°СЂРєРё", 2, 200));
+        items.add(new Item("Р—РѕР»РѕС‚Рѕ", 3, 400));
+        items.add(new Item("РЁРєР°С‚СѓР»РєР°", 2, 500));
     }
 
     private static void showItems(List<Item> listItems) {
@@ -33,15 +33,16 @@ public class Seven {
         List<Item> solve = safe.getBestList();
 
         if (solve == null) {
-            System.out.println("Нет решения!");
+            System.out.println("Р РµС€РµРЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ!");
         } else {
             showItems(solve);
-            System.out.println("Решение найдено!");
+            System.out.println("Р РµС€РµРЅРёРµ РЅР°Р№РґРµРЅРѕ!");
         }
     }
 
-    public void setMaxValue(int maxCost) {
+    public void setMaxValue(int maxValue) {
         addItems();
-        solve(maxCost);
+        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РѕР±СЉРµРј СЃРµР№С„Р°: "+maxValue);
+        solve(maxValue);
     }
 }
