@@ -30,7 +30,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Объем = " + volume + ", Ценность = " + price + ", Наименование = " + name;
+           return "РѕР±СЉРµРј = " + volume + ", С†РµРЅРЅРѕСЃС‚СЊ = " + price + ", РЅР°Р·РІР°РЅРёРµ = " + name;
     }
 
 }
