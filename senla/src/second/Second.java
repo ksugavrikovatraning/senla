@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Second {
     public static void sum() {
         int result = 0;
-        System.out.println("Введите строку: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ");
         String s = new Scanner(System.in).nextLine();
         for (String num : s.replaceAll("[^\\d]", "").split("")) {
             result += Integer.parseInt(num);
         }
-        System.out.println("Сумма цифр в заданной строке: " + result);
+        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ \"С‚СЂРѕРµРє\" РІ СЃС‚СЂРѕРєРµ:  " + result);
     }
 }
