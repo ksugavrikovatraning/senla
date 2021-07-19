@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Fiveth {
-    final static Pattern PATTERN = Pattern.compile("[¸óåûàîıÿèş]");
+    final static Pattern PATTERN = Pattern.compile("[Ñ‘ÑƒĞµÑ‹Ğ°Ğ¾ÑÑĞ¸Ñ]");
 
     public int getCount(String str) {
         int k = 0;
@@ -30,7 +30,7 @@ public class Fiveth {
     }
 
     public void stringManipulation() {
-        System.out.println("Ââåäèòå ïğåäëîæåíèå");
+        System.out.println("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ñ€ĞµĞ´Ğ»Ğ¾Ğ¶ĞµĞ½Ğ¸Ğµ");
         String str = new Scanner(System.in).nextLine();
         String[] s = str.split(" ");
         Arrays.sort(s, new Comparator<String>() {
